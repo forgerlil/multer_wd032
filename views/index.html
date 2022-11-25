@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>File Upload Exercise</title>
+  </head>
+  <body>
+    <form
+      method="POST"
+      action="/upload-profile-pic"
+      enctype="multipart/form-data"
+    >
+      <div>
+        <label for="profile_pic">Select your profile picture:</label>
+        <input id="profile_pic" type="file" name="profile_pic" />
+      </div>
+      <div>
+        <input type="submit" value="Upload" />
+      </div>
+    </form>
+    <br />
+
+    <hr />
+    <br />
+    <form method="POST" action="/upload-cat-pics" enctype="multipart/form-data">
+      <div>
+        <label for="cat_pics">Select your cat pictures:</label>
+        <input id="cat_pics" type="file" name="cat_pics" multiple />
+      </div>
+      <div>
+        <input type="submit" value="Upload Cat Pics" />
+      </div>
+    </form>
+  </body>
+</html>
